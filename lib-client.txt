@@ -1,0 +1,12 @@
+
+# client create command --> ng new client
+
+# client install dependencies
+
+cd client
+
+ng add @angular/material
+ng add mdb-angular-ui-kit
+npm install admin-lte@^3.0 --save
+
+cd ..
