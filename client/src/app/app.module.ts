@@ -9,6 +9,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MaterialModule } from './shared/material.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { HomeComponent } from './components/pages/home/home.component';
+import { AboutComponent } from './components/pages/about/about.component';
+import { PagesComponent } from './components/pages/pages.component';
 
 
 @NgModule({
@@ -16,7 +19,10 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     AppComponent,
     DashboardComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    HomeComponent,
+    AboutComponent,
+    PagesComponent
   ],
   imports: [
     BrowserModule,
