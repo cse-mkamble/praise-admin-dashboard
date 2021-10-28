@@ -8,7 +8,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatBadgeModule } from '@angular/material/badge';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatButtonModule } from '@angular/material/button';
 
 const modules = [
     MatIconModule,
@@ -18,7 +19,8 @@ const modules = [
     MatDialogModule,
     MatToolbarModule,
     MatBadgeModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatButtonModule
 ];
 
 

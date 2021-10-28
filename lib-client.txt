@@ -8,5 +8,6 @@ cd client
 ng add @angular/material
 ng add mdb-angular-ui-kit
 npm install admin-lte@^3.0 --save
+ng add angular-bootstrap-md
 
 cd ..

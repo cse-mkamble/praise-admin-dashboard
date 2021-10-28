@@ -1,4 +1,4 @@
-<div style="padding: 0 50px; background-color: aliceblue;">
+<div style="padding: 0 20px; background-color: aliceblue;">
     <!-- Content Header (Page header) -->
     <div class="content-header">
         <div class="container-fluid">
@@ -25,221 +25,144 @@
             <div class="col-sm-4">
 
 
-                <!--Carousel Wrapper-->
-                <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-                    <mat-card class="example-card">
-                        <div class="row mb-2">
+                <div>
+                    <div class="card">
+                        <div class="row mb-2" style="padding: 10px 20px;">
                             <div class="col-sm-8">
-                                <mat-card-title>Overdue Requests</mat-card-title>
+                                <div>Overdue Requests</div>
                             </div>
                             <div class="col-sm-4">
                                 <!--Controls-->
-                                <div class="controls-top">
-                                    <a class="btn-floating" href="#multi-item-example" data-slide="prev">
-                                        <mat-icon>navigate_before</mat-icon>
-                                    </a>
-                                    <a class="btn-floating" href="#multi-item-example" data-slide="next">
-                                        <mat-icon>navigate_next</mat-icon>
-                                    </a>
+                                <div>
+                                    <div style="float: left">
+                                        <mat-icon (click)="scrollLeft()">navigate_before</mat-icon>
+                                    </div>
+                                    <div style="float: right">
+                                        <mat-icon (click)="scrollRight()">navigate_next</mat-icon>
+                                    </div>
                                 </div>
                                 <!--/.Controls-->
                             </div>
                         </div>
 
-                        <mat-card-content>
+                        <div style="padding: 0 20px; font-size: 12px;">
+                            <div>
+                                <div #widgetsContent class="scroll">
+                                    <div style="display: inline-flex;">
 
-                            <mat-card style="width: 70%;">
-                                <mat-card-header>
-                                    <div mat-card-avatar class="example-header-image">
-                                        <img width="100%" src="assets/img/avatar-user.png" />
-                                    </div>
-                                    <mat-card-title>Venkat</mat-card-title>
-                                    <mat-card-subtitle>Store Manager</mat-card-subtitle>
-                                </mat-card-header>
-                                <hr class="m-0"/>
-                                
-
-                            </mat-card>
-
-                        </mat-card-content>
-                    </mat-card>
-
-
-
-
-                    <!--Slides-->
-                    <div class="carousel-inner" role="listbox">
-
-                        <!--First slide-->
-                        <div class="carousel-item active">
-
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the
-                                                card's content.</p>
-                                            <a class="btn btn-primary">Button</a>
+                                        <!--First slide-->
+                                        <div class="card" style="width: 180px; margin: 10px;">
+                                            <div style="padding: 10px;">
+                                                <div style="display: flex;">
+                                                    <div style="display: flex; margin: 2px;">
+                                                        <img width="32px" src="assets/img/avatar-user.png" />
+                                                    </div>
+                                                    <div>
+                                                        <div>Venkat</div>
+                                                        <div style="color: darkgray;">Store Manager</div>
+                                                    </div>
+                                                </div>
+                                                <hr />
+                                                <div>
+                                                    <div>Overdue of April, 2021</div>
+                                                    <div style="color: darkgray;">Requests - Today, 11:00 am</div>
+                                                </div>
+                                                <hr />
+                                                <div
+                                                    style="display: flex; justify-content: center; text-align: center;">
+                                                    <div>
+                                                        <div style="color: darkgray;">Reject</div>
+                                                        <i style="color: darkgray;" class="material-icons">close</i>
+                                                    </div>
+                                                    <div style="margin-left: 20px;">
+                                                        <div style="color: darkgray;">Approve</div>
+                                                        <i style="color: darkgray;" class="material-icons">check</i>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
+                                        <!--/.First slide-->
 
-                                <div class="col-md-4 clearfix d-none d-md-block">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the
-                                                card's content.</p>
-                                            <a class="btn btn-primary">Button</a>
+                                        <!--Second slide-->
+                                        <div class="card" style="width: 180px; margin: 10px;">
+                                            <div style="padding: 10px;">
+                                                <div style="display: flex;">
+                                                    <div style="display: flex; margin: 2px;">
+                                                        <img width="32px" src="assets/img/avatar-user.png" />
+                                                    </div>
+                                                    <div>
+                                                        <div>Sriram</div>
+                                                        <div style="color: darkgray;">Store Manager</div>
+                                                    </div>
+                                                </div>
+                                                <hr />
+                                                <div>
+                                                    <div>Overdue of April, 2021</div>
+                                                    <div style="color: darkgray;">Requests - Today, 11:00 am</div>
+                                                </div>
+                                                <hr />
+                                                <div
+                                                    style="display: flex; justify-content: center; text-align: center;">
+                                                    <div>
+                                                        <div style="color: darkgray;">Reject</div>
+                                                        <i style="color: darkgray;" class="material-icons">close</i>
+                                                    </div>
+                                                    <div style="margin-left: 20px;">
+                                                        <div style="color: darkgray;">Approve</div>
+                                                        <i style="color: darkgray;" class="material-icons">check</i>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
+                                        <!--/.Second slide-->
 
-                                <div class="col-md-4 clearfix d-none d-md-block">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the
-                                                card's content.</p>
-                                            <a class="btn btn-primary">Button</a>
+                                        <!--Third slide-->
+                                        <div class="card" style="width: 180px; margin: 10px;">
+                                            <div style="padding: 10px;">
+                                                <div style="display: flex;">
+                                                    <div style="display: flex; margin: 2px;">
+                                                        <img width="32px" src="assets/img/avatar-user.png" />
+                                                    </div>
+                                                    <div>
+                                                        <div>Sneha</div>
+                                                        <div style="color: darkgray;">Store Manager</div>
+                                                    </div>
+                                                </div>
+                                                <hr />
+                                                <div>
+                                                    <div>Overdue of April, 2021</div>
+                                                    <div style="color: darkgray;">Requests - Today, 11:00 am</div>
+                                                </div>
+                                                <hr />
+                                                <div
+                                                    style="display: flex; justify-content: center; text-align: center;">
+                                                    <div>
+                                                        <div style="color: darkgray;">Reject</div>
+                                                        <i style="color: darkgray;" class="material-icons">close</i>
+                                                    </div>
+                                                    <div style="margin-left: 20px;">
+                                                        <div style="color: darkgray;">Approve</div>
+                                                        <i style="color: darkgray;" class="material-icons">check</i>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
+                                        <!--/.Third slide-->
 
-                        </div>
-                        <!--/.First slide-->
-
-                        <!--Second slide-->
-                        <div class="carousel-item">
-
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the
-                                                card's content.</p>
-                                            <a class="btn btn-primary">Button</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 clearfix d-none d-md-block">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the
-                                                card's content.</p>
-                                            <a class="btn btn-primary">Button</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 clearfix d-none d-md-block">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the
-                                                card's content.</p>
-                                            <a class="btn btn-primary">Button</a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                        <!--/.Second slide-->
-
-                        <!--Third slide-->
-                        <div class="carousel-item">
-
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the
-                                                card's content.</p>
-                                            <a class="btn btn-primary">Button</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 clearfix d-none d-md-block">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the
-                                                card's content.</p>
-                                            <a class="btn btn-primary">Button</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 clearfix d-none d-md-block">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top"
-                                            src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the
-                                                card's content.</p>
-                                            <a class="btn btn-primary">Button</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                        <div style="padding: 10px; display: flex; justify-content: end;">
+                            <button mat-button>View All</button>
                         </div>
-                        <!--/.Third slide-->
 
                     </div>
-                    <!--/.Slides-->
 
                 </div>
                 <!--/.Carousel Wrapper-->
             </div><!-- /.col -->
         </div><!-- /.row -->
     </div><!-- /.container-fluid -->
-
-</div>
-
-<div style="">
 
 </div>
