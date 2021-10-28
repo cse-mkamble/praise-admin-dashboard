@@ -10,6 +10,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
 
 const modules = [
     MatIconModule,
@@ -20,7 +21,8 @@ const modules = [
     MatToolbarModule,
     MatBadgeModule,
     MatExpansionModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSelectModule
 ];
 
 

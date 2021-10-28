@@ -4,7 +4,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <p class="m-0 text-dark">PRAISE</p>
+                    <p class="m-0 text-dark" style="font-size: 24px;">PRAISE</p>
                 </div><!-- /.col -->
 
             </div><!-- /.row -->
@@ -169,10 +169,53 @@
 
 
 <div style="background: white;">
-    <div>
+    <div style="padding: 10px;">
 
 
         <div>
+
+            <div class="row mb-2">
+
+                <div class="col-sm-4">
+                    <div style="display: flex; justify-content: center;">
+                        <button style="width: 200px;" mat-raised-button color="primary"> + Create New</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-8">
+
+                    <div>
+                        <div class="row mb-2">
+                            <div class="col-sm-8" style="display: flex; justify-content: end;">
+                                <mat-form-field appearance="fill">
+                                    <mat-label>Show</mat-label>
+                                    <mat-select>
+                                        <mat-option>Clear</mat-option>
+                                        <mat-option value="valid">Valid option</mat-option>
+                                        <mat-option value="invalid">Invalid option</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-sm-4">
+                                <div>
+                                    <div style="float: left">
+                                        <button mat-raised-button color="primary" (click)="scrollLeft2()">
+                                            <mat-icon>navigate_before</mat-icon>
+                                        </button>
+                                    </div>
+                                    <div style="float: right">
+                                        <button mat-raised-button color="primary" (click)="scrollRight2()">
+                                            <mat-icon>navigate_next</mat-icon>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -181,7 +224,7 @@
 
             <div style="padding: 0 20px; font-size: 14px;">
                 <div>
-                    <div #widgetsContent class="scroll">
+                    <div #widgetsContent2 class="scroll">
                         <div style="display: inline-flex;">
 
                             <!--First slide-->

@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   @ViewChild('widgetsContent') public widgetsContent: ElementRef<any>;
+  @ViewChild('widgetsContent2') public widgetsContent2: ElementRef<any>;
 
   ngOnInit(): void {
   }
@@ -21,5 +22,15 @@ export class HomeComponent implements OnInit {
   scrollRight() {
     this.widgetsContent.nativeElement.scrollLeft += 150;
   }
+
+
+  scrollLeft2() {
+    this.widgetsContent2.nativeElement.scrollLeft -= 360;
+  }
+
+  scrollRight2() {
+    this.widgetsContent2.nativeElement.scrollLeft += 360;
+  }
+
 
 }
