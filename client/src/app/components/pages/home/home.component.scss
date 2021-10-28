@@ -15,7 +15,7 @@
     filter: invert(100%);
 }
 
-.scroll{
+.scroll {
     white-space: nowrap;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
@@ -23,6 +23,13 @@
     scroll-behavior: smooth;
 }
 
-.scroll::-webkit-scrollbar{
+.scroll::-webkit-scrollbar {
     display: none;
+}
+
+.activePanelFooter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
