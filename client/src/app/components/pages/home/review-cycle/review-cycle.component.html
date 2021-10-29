@@ -1,22 +1,86 @@
 <!-- Content Header (Page header) -->
 <div class="content-header">
     <div class="container-fluid">
-        <div class="row mb-2">
-            <div class="col-sm-6">
-                <p class="m-0 text-dark" style="font-size: 24px;">PRAISE</p>
-            </div><!-- /.col -->
-
+        <div class="row">
+            <p class="m-0 text-dark" style="font-size: 20px;">PRAISE</p>
         </div><!-- /.row -->
     </div><!-- /.container-fluid -->
 </div>
 <!-- /.content-header -->
 
 <div class="container-fluid">
-    <div class="row mb-2">
+    <div class="row  ">
         <div class="col-sm-8">
-            <mat-card class="example-card">
+            <div class="card">
+                <div style="padding: 10px 10px 0;">
 
-            </mat-card>
+                    <div>
+                        <div>
+                            <div class="row mb-2 ">
+                                <div class="col-sm-2">
+                                    <div>Grade Statistics</div>
+                                </div>
+                                <div class="col-sm-10" style="display: flex; font-size: 14px;">
+                                    <div style="margin-left: 10px;">
+                                        <label>Select Region</label>
+                                        <br />
+                                        <select size="sm" style="width: 140px;" class="browser-default custom-select">
+                                            <option selected>All</option>
+                                            <option>Clear</option>
+                                            <option value="valid">Valid option</option>
+                                            <option value="invalid">Invalid option</option>
+                                        </select>
+                                    </div>
+                                    <div style="margin-left: 10px;">
+                                        <label>Select Job Role</label>
+                                        <br />
+                                        <select size="sm" style="width: 140px;" class="browser-default custom-select">
+                                            <option selected>All</option>
+                                            <option>Clear</option>
+                                            <option value="valid">Valid option</option>
+                                            <option value="invalid">Invalid option</option>
+                                        </select>
+                                    </div>
+                                    <div style="margin-left: 10px;">
+                                        <label>Select From date</label>
+                                        <br />
+                                        <input type="text" class="form-control" placeholder="Select From date"
+                                            bsDatepicker />
+                                    </div>
+                                    <div style="margin-left: 10px;">
+                                        <label>Select To date</label>
+                                        <br />
+                                        <input type="text" class="form-control" placeholder="Select To date"
+                                            bsDatepicker />
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="row  " style="padding: 10px 10px 0;">
+                            <div class="col-sm-8">
+                                <div class="card">
+                                    <div style="width:100%;">
+                                        <canvas id="myChart" width="700" height="200" #mychart></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <div style="width:100%; padding-top: 24px;">
+                                        <canvas id="myChart2" width="700" height="340" #mychart2></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div><!-- /.col -->
 
 
@@ -26,7 +90,7 @@
 
             <div>
                 <div class="card">
-                    <div class="row mb-2" style="padding: 10px 20px;">
+                    <div class="row  " style="padding: 10px 20px 0;">
                         <div class="col-sm-8">
                             <div>Overdue Requests</div>
                         </div>
@@ -61,12 +125,12 @@
                                                     <div style="color: darkgray;">Store Manager</div>
                                                 </div>
                                             </div>
-                                            <hr />
+                                            <div class="lineOverdue"></div>
                                             <div>
                                                 <div>Overdue of April, 2021</div>
                                                 <div style="color: darkgray;">Requests - Today, 11:00 am</div>
                                             </div>
-                                            <hr />
+                                            <div class="lineOverdue"></div>
                                             <div style="display: flex; justify-content: center; text-align: center;">
                                                 <div>
                                                     <div style="color: darkgray;">Reject</div>
@@ -93,12 +157,12 @@
                                                     <div style="color: darkgray;">Store Manager</div>
                                                 </div>
                                             </div>
-                                            <hr />
+                                            <div class="lineOverdue"></div>
                                             <div>
                                                 <div>Overdue of April, 2021</div>
                                                 <div style="color: darkgray;">Requests - Today, 11:00 am</div>
                                             </div>
-                                            <hr />
+                                            <div class="lineOverdue"></div>
                                             <div style="display: flex; justify-content: center; text-align: center;">
                                                 <div>
                                                     <div style="color: darkgray;">Reject</div>
@@ -125,12 +189,12 @@
                                                     <div style="color: darkgray;">Store Manager</div>
                                                 </div>
                                             </div>
-                                            <hr />
+                                            <div class="lineOverdue"></div>
                                             <div>
                                                 <div>Overdue of April, 2021</div>
                                                 <div style="color: darkgray;">Requests - Today, 11:00 am</div>
                                             </div>
-                                            <hr />
+                                            <div class="lineOverdue"></div>
                                             <div style="display: flex; justify-content: center; text-align: center;">
                                                 <div>
                                                     <div style="color: darkgray;">Reject</div>
@@ -149,7 +213,7 @@
                             </div>
                         </div>
                     </div>
-                    <div style="padding: 10px; display: flex; justify-content: end;">
+                    <div style="padding: 0px 10px; display: flex; justify-content: end;">
                         <button mat-button>View All</button>
                     </div>
 

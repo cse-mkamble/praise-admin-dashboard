@@ -26,3 +26,8 @@
 .scroll::-webkit-scrollbar {
     display: none;
 }
+
+.lineOverdue {
+    border-bottom: 1px solid #cecbcb;
+    margin: 8px 0;
+}

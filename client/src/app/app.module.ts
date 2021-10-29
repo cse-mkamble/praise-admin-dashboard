@@ -15,6 +15,7 @@ import { PagesComponent } from './components/pages/pages.component';
 import { ReviewCycleComponent } from './components/pages/home/review-cycle/review-cycle.component';
 import { ParticipantsComponent } from './components/pages/home/participants/participants.component';
 import { QuestionnairesComponent } from './components/pages/home/questionnaires/questionnaires.component';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { QuestionnairesComponent } from './components/pages/home/questionnaires/
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    BsDatepickerModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
