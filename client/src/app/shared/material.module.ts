@@ -12,6 +12,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 
+import {MatTabsModule} from '@angular/material/tabs';
+
 const modules = [
     MatIconModule,
     MatCardModule,
@@ -22,7 +24,8 @@ const modules = [
     MatBadgeModule,
     MatExpansionModule,
     MatButtonModule,
-    MatSelectModule
+    MatSelectModule,
+    MatTabsModule,
 ];
 
 

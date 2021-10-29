@@ -12,7 +12,9 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { PagesComponent } from './components/pages/pages.component';
-
+import { ReviewCycleComponent } from './components/pages/home/review-cycle/review-cycle.component';
+import { ParticipantsComponent } from './components/pages/home/participants/participants.component';
+import { QuestionnairesComponent } from './components/pages/home/questionnaires/questionnaires.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,10 @@ import { PagesComponent } from './components/pages/pages.component';
     SidebarComponent,
     HomeComponent,
     AboutComponent,
-    PagesComponent
+    PagesComponent,
+    ReviewCycleComponent,
+    ParticipantsComponent,
+    QuestionnairesComponent
   ],
   imports: [
     BrowserModule,
